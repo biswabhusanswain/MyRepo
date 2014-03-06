@@ -22,6 +22,7 @@ public class HQLTest {
 		session.save(st);
 		session.flush();
 		transaction.commit();
+		System.out.println("Test 1");
 		
 		}catch(HibernateException e){
 			System.err.println("Hibernate Exception "+e.getClass().getName()+ "----------" + e.getMessage());
